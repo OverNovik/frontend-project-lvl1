@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 
-[![lint check](https://github.com/OverNovik/frontend-project-lvl1/workflows/lint-check/badge.svg)](https://github.com/OverNovik/frontend-project-lvl1/actions)
+[![lint check](https://github.com/OverNovik/frontend-project-lvl1/actions/workflows/hexlet-workflows.yaml/badge.svg)](https://github.com/OverNovik/frontend-project-lvl1/actions)
 
 [![Actions Status](https://github.com/OverNovik/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/OverNovik/frontend-project-lvl1/actions)
 
