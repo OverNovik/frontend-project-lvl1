@@ -26,4 +26,4 @@ jobs:
         with:
           hexlet-id: ${{ secrets.HEXLET_ID }}
       - name: use eslint
-        run: make lint
+        run: npx eslint .
