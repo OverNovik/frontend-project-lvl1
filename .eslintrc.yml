@@ -1,12 +1,12 @@
 env:
   node: true
-  es2020: true
+  es2021: true
 
 extends:
-  - "airbnb-base"
+  - airbnb-base
 
 parserOptions:
-  ecmaVersion: 11
+  ecmaVersion: latest
   sourceType: module
 
 rules:
