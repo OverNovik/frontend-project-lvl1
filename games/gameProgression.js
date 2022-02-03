@@ -11,7 +11,7 @@ const brainArithmeticProgression = () => {
     const emptyValue = randomInteger(0, 10);
     if (correctAnswerList[correctAnswerList.length - 1] !== 'finish') {
       const newProgression = range(firstNum, secondNum);
-      const question = newProgression.map((item, id) => (id === emptyValue ? '..' : item)).join(', ');
+      const question = newProgression.map((item, id) => (id === emptyValue ? '..' : item)).join(' ');
       const correctAnswer = newProgression[emptyValue].toString();
       const result = gameParts(name, question, correctAnswer);
       correctAnswerList.push(result);
