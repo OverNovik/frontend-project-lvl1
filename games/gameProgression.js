@@ -17,7 +17,7 @@ const brainArithmeticProgression = () => {
       correctAnswerList.push(result);
     }
     if (correctAnswerList[correctAnswerList.length - 1] !== 'finish') {
-      console.log(`Congratulations, ${name}`);
+      console.log(`Congratulations, ${name}!`);
     }
   }
 };
