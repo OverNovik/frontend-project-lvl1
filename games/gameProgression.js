@@ -1,16 +1,18 @@
-import { gameParts, randomInteger, greatestCommonDivisor } from '../index.js';
+import { gameParts, randomInteger, range } from '../index.js';
 import welcome from '../src/cli.js';
 
-const brainGcd = () => {
+const brainArithmeticProgression = () => {
   const correctAnswerList = [];
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log('What number is missing in the progression?');
   const name = welcome();
   for (let i = 0; i < 3; i += 1) {
     const firstNum = randomInteger(1, 100);
     const secondNum = randomInteger(1, 100);
+    const emptyValue = randomInteger(0, 10);
     if (correctAnswerList[i - 1] !== 'finish') {
-      const question = `${firstNum} ${secondNum}`;
-      const correctAnswer = greatestCommonDivisor(firstNum, secondNum).toString();
+      const newProgression = range(firstNum, secondNum);
+      const question = newProgression.map((item, id) => (id === emptyValue ? '..' : item)).join(', ');
+      const correctAnswer = newProgression[emptyValue].toString();
       const result = gameParts(name, question, correctAnswer);
       correctAnswerList.push(result);
     }
@@ -20,4 +22,4 @@ const brainGcd = () => {
   }
 };
 
-export default brainGcd;
+export default brainArithmeticProgression;

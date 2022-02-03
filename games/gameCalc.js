@@ -1,17 +1,5 @@
-import { gameParts, randomInteger } from '../index.js';
+import { gameParts, randomInteger, mathOperation } from '../index.js';
 import welcome from '../src/cli.js';
-
-const mathOperation = (firstNum, secondNum, operator) => {
-  let result = '';
-  if (operator === '+') {
-    result = firstNum + secondNum;
-  } else if (operator === '-') {
-    result = firstNum - secondNum;
-  } else if (operator === '*') {
-    result = firstNum * secondNum;
-  }
-  return result;
-};
 
 const brainCalc = () => {
   const correctAnswerList = [];

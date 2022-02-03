@@ -17,3 +17,30 @@ export const gameParts = (name, question, correctAnswer) => {
   console.log(`Let's try again, ${name}`);
   return 'finish';
 };
+
+export const mathOperation = (firstNum, secondNum, operator) => {
+  let result = '';
+  if (operator === '+') {
+    result = firstNum + secondNum;
+  } else if (operator === '-') {
+    result = firstNum - secondNum;
+  } else if (operator === '*') {
+    result = firstNum * secondNum;
+  }
+  return result;
+};
+
+export const greatestCommonDivisor = (firstNum, secondNum) => {
+  let result = '';
+  if (secondNum) {
+    result = greatestCommonDivisor(secondNum, firstNum % secondNum);
+  } else {
+    result = Math.abs(firstNum);
+  }
+  return result;
+};
+
+export const range = (start, end, length = 10) => {
+  const arr = new Array(length).fill();
+  return arr.map((d, i) => i + start);
+};
