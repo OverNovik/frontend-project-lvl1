@@ -9,7 +9,7 @@ const brainArithmeticProgression = () => {
     const firstNum = randomInteger(1, 100);
     const secondNum = randomInteger(1, 100);
     const emptyValue = randomInteger(0, 10);
-    if (correctAnswerList[i - 1] !== 'finish') {
+    if (correctAnswerList[correctAnswerList.length - 1] !== 'finish') {
       const newProgression = range(firstNum, secondNum);
       const question = newProgression.map((item, id) => (id === emptyValue ? '..' : item)).join(', ');
       const correctAnswer = newProgression[emptyValue].toString();

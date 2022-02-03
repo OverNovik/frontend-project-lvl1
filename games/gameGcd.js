@@ -8,7 +8,7 @@ const brainGcd = () => {
   for (let i = 0; i < 3; i += 1) {
     const firstNum = randomInteger(1, 100);
     const secondNum = randomInteger(1, 100);
-    if (correctAnswerList[i - 1] !== 'finish') {
+    if (correctAnswerList[correctAnswerList.length - 1] !== 'finish') {
       const question = `${firstNum} ${secondNum}`;
       const correctAnswer = greatestCommonDivisor(firstNum, secondNum).toString();
       const result = gameParts(name, question, correctAnswer);

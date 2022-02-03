@@ -10,7 +10,7 @@ const brainCalc = () => {
     const firstNum = randomInteger(1, 100);
     const secondNum = randomInteger(1, 100);
     const randomOperator = operators[randomInteger(0, 2)];
-    if (correctAnswerList[i - 1] !== 'finish') {
+    if (correctAnswerList[correctAnswerList.length - 1] !== 'finish') {
       const question = `${firstNum}${randomOperator}${secondNum}`;
       const correctAnswer = mathOperation(firstNum, secondNum, randomOperator).toString();
       const result = gameParts(name, question, correctAnswer);
