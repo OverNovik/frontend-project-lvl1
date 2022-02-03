@@ -11,7 +11,7 @@ const brainCalc = () => {
     const secondNum = randomInteger(1, 100);
     const randomOperator = operators[randomInteger(0, 2)];
     if (correctAnswerList[correctAnswerList.length - 1] !== 'finish') {
-      const question = `${firstNum}${randomOperator}${secondNum}`;
+      const question = `${firstNum} ${randomOperator} ${secondNum}`;
       const correctAnswer = mathOperation(firstNum, secondNum, randomOperator).toString();
       const result = gameParts(name, question, correctAnswer);
       correctAnswerList.push(result);
