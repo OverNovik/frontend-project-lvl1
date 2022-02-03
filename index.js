@@ -44,3 +44,8 @@ export const range = (start, end, length = 10) => {
   const arr = new Array(length).fill();
   return arr.map((d, i) => i + start);
 };
+
+export const isPrime = (num) => {
+  for (let i = 2; i < num; i += 1) { if (num % i === 0) return false; }
+  return num > 1;
+};
